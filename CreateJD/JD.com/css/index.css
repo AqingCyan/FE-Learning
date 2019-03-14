@@ -1,0 +1,272 @@
+/*
+首页中间不公共部分的书写
+*/
+/*中间分类模块 begin*/
+.gird {
+    height: 480px;
+}
+.gird-clo1 {
+    width: 190px;
+    height: 100%;
+    background-color: #fff;
+    color: #666;
+    font-size: 13px;  /*给反斜杠的大小*/
+}
+.gird-clo1 a {
+    color: #666;
+    font-size: 14px;  /*给a标签的  a受到了base.css的影响所以是小的*/
+    margin:0 1px;
+}
+.gird-clo1 a:hover {
+    color: #f10215;
+}
+.gird-clo1 ul{
+    padding: 15px 0;  /*如果padding-left写成margin-left上 会使移入背景阴影不完全 所以padding-left（使用内边距）*/
+}
+.gird-clo1 ul li {
+    padding-left: 15px;
+    height: 28px;
+    line-height: 28px;
+}
+.gird-clo1 ul li:hover {
+    background-color: #ccc;
+}
+.gird-clo2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+/*轮播图部分*/
+.gird-clo2 {
+    position: relative;
+}
+.gird-clo2-l {
+    position: absolute;
+    top:10px;
+}
+.gird-clo2-r {
+    position: absolute;
+    right: 0;
+    bottom:0;  /*使底部对齐*/
+}
+.gird-clo2-r img {
+    margin-top: 10px; /*右侧图片间隔*/
+}
+/*箭头*/
+.arrow-l,.arrow-r {
+    position: absolute;
+    top:50%;
+    width: 30px;
+    height: 60px;
+    background:rgba(0,0,0,0.3); /*箭头背景半透明*/
+    transform: translateY(-50%); /*使箭头垂直居中*/
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    color:rgba(255,255,255,.6);
+    font-family: arial;
+    font-weight: normal;
+}
+.arrow-r {
+    right: 0; /*使三个小图片向右浮动*/
+}
+.circle {
+    width: 167px;
+    height: 22px;
+    background: rgba(255,255,255,.3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px;  /*圆角*/
+    padding-left: 8px;
+}
+.circle li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 5px 4px 0;
+    cursor: pointer;  /*鼠标移入变手*/
+}
+.circle .current {
+    background-color: #f10215;
+}
+/*右边模块*/
+.gird-clo3 {
+    margin-top: 10px;
+    width: 190px;
+    height: 100%;
+}
+.login {
+    padding: 15px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.login-t {
+    width: 95px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap; /*强制不换行*/
+    overflow: hidden; /*溢出宽度的字隐藏*/
+    text-overflow: ellipsis;  /*超出部分以省略号显示*/
+    color: #666;
+    padding-left: 60px; /*这里给padding-left把文字挤到右边 给头像位置*/
+    position: relative;
+}
+.login-t a {
+    color: #666;
+}
+.login-t a:hover {
+    color: #f10215;
+}
+.user-info {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left:0;
+    top:0;
+    border: 3px solid burlywood;
+    border-radius: 50%;
+}
+.user-info img {
+    width: 100%;
+    border-radius: 50%;
+}
+.login-b a {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #f10215;
+    border: 2px solid #f10215;
+    margin-right: 3px;
+}
+.login-b a:hover {
+    background-color: #f10215;
+    color: #fff;
+}
+.news {
+    height: 155px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+}
+.news a {
+    color: #666666;
+}
+.news a:hover {
+    color: #f10215;
+}
+.news-t {
+    height: 19px;
+    position: relative;
+}
+.news-t a {
+    float: left;
+    height: 17px;
+    line-height: 17px;
+}
+.cuxiao {
+    width: 38px;
+    height: 17px;
+    line-height: 17px;
+    border-right: 1px solid #ccc;
+}
+.gonggao {
+    margin-left: 15px;
+}
+.news-t .more {
+    float: right;
+}
+.news-t div {   /*下方红线制作*/
+    height: 2px;
+    width: 28px;
+    background-color: #f10215;
+    position: absolute;
+    bottom: 0;
+    left: -1px; /*定位后 调整1px 刚好压住下方边框*/
+}
+.news-b {
+    padding-top: 15px;
+}
+.news-b li{
+    height: 23px;
+    line-height: 23px;
+}
+.expand {
+    height: 204px;
+    background-color: #fff;
+    overflow: hidden;  /*这个宽度继承了父级 是190px 所以下方ul虽然宽度为195px 溢出的部分可以直接隐藏掉*/
+}
+.expand ul {
+    width: 195px;  /*父级是190像素 但是里面的li因为边框 宽度超过了190像素 摆放不开4个li*/
+
+}
+.expand li {
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expand li a {
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+.expand li i {
+    display: block;   /*i标签没有宽高 得转换为块级元素*/
+    margin: 0 auto;
+    margin-bottom: 7px;
+    width: 18px;
+    height: 23px;
+    background: url("../images/sprite.service.png") no-repeat;
+}
+.expand li:nth-child(1) i {
+    background-position: -150px -43px;
+}
+.expand li:nth-child(2) i {
+    background-position: -31px -43px;
+}
+.expand li:nth-child(3) i {
+    background-position: -177px -43px;
+}
+.expand li:nth-child(4) i {
+    width: 24px; /*游戏图标过大 因此加大了宽度*/
+    background-position: -87px -43px;
+}
+.expand li:nth-child(5) i {
+    width: 24px;
+    background-position: -117px -43px;
+}
+.expand li:nth-child(6) i {
+    width: 24px;
+    background-position: -119px -73px;
+}
+.expand li:nth-child(7) i {
+    width: 24px;
+    background-position: -59px -43px;
+}
+.expand li:nth-child(8) i {
+    background-position: -6px -73px;
+}
+.expand li:nth-child(9) i {
+    background-position: -32px -72px;
+}
+.expand li:nth-child(10) i {
+    background-position: -62px -72px;
+}
+.expand li:nth-child(11) i {
+    width: 24px;
+    background-position: -88px -73px;
+}
+.expand li:nth-child(12) i {
+    background-position: -4px -43px;
+}
+/*中间分类模块 over*/

@@ -1,0 +1,31 @@
+/**index.wxss**/
+page {
+  background: #F1F0F6;
+}
+
+.placeholder {
+  font-size: 15px;
+  color: blueviolet;
+}
+
+input {
+  background:#ffffff;
+  height: 100rpx;
+  margin-bottom: 1px;
+  padding-left: 15rpx;
+}
+
+button {
+  margin: 30rpx 50rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+
+.content {
+  background: #ffffff;
+  font-size: 15px;
+}
+
+.content-item {
+  padding: 20rpx;
+}

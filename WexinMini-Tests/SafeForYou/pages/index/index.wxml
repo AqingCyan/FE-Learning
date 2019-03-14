@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class='top'>
+  <view class='top-title'>您选择的预警计时为</view>
+  <view class='timeShow'>
+    <view class='time'>{{lateHour}}</view>
+    <view class='time'>{{lateMinute}}</view>
+  </view>
+</view>
+<view class='mid'>
+  <button type='warn' bindtap='choose' disabled='{{!btn_flag}}'>选择预警计时</button>
+  <button type='default' disabled='{{btn_flagWhit}}' bindtap='timeMore'>我仍然在路上</button>
+  <button type='primary' disabled='{{btn_flagSafe}}' bindtap='timeOver'>我已平安到家</button>
+</view>
+<view class='picker' wx:if="{{picker_flag}}">
+  <view class='btn'>
+    <view bindtap='determine'>取消</view>
+    <view bindtap='cancel'>确定</view>
+  </view>
+  <picker-view bindchange='bindChange' class='picker-view'>
+    <picker-view-column>
+      <view wx:for="{{hour}}" wx:key="hour">{{item}}时</view>
+    </picker-view-column>
+
+    <picker-view-column>
+      <view wx:for="{{minute}}" wx:key="minute">{{item}}分</view>
+    </picker-view-column>
+  </picker-view>  
+</view>
+<view class='title' hidden='{{flag}}'>为了保证安全，请勿关闭小程序</view>

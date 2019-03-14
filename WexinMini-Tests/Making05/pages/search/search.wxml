@@ -1,0 +1,19 @@
+<!-- 手写一个提示 -->
+<view class='box' wx:if='{{showToast}}'>
+  <view class='window'>
+    <view class='text'>
+      不能为空
+    </view>
+  </view>
+</view>
+
+<view class='container'>
+  <view class='search'>
+    <form>
+      <input bindconfirm='confirm' bindinput='input' placeholder='搜索歌曲、歌单、专辑' placeholder-class='placeholder' confirm-type='search'>
+        <image src='../../img/search.png'></image>
+      </input>
+      <button bindtap='reset' class='resetBtn' hidden='{{!resetBtn}}' form-type='reset'>x</button>
+    </form>
+  </view>
+</view>

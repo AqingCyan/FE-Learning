@@ -1,0 +1,156 @@
+/* pages/search/search.wxss */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.window {
+  width: 50%;
+  padding: 20rpx;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 20rpx;
+}
+
+.text {
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  padding: 0;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  background: #f4f4f4;
+}
+
+.search image {
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  top: 16px;
+  left: 15px;
+  z-index: 1;
+}
+
+input {
+  background: #fff;
+  height: 36px;
+  margin: 10px;
+  padding-left: 40px;
+}
+
+.placeholder {
+  color: rgba(0,0,0,.3);
+  font-size: 15px;
+}
+
+.resetBtn {
+  padding: 0;
+  position: absolute;
+  width: 22px;
+  line-height: 22px;
+  height: 22px;
+  top: 18px;
+  right: 15px;
+  z-index: 999;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, .4);
+  color: white;
+}
+
+/*歌曲的展示  */
+
+.music-body {
+  width: 750rpx;
+  font-size: 15px;
+}
+
+.content-item {
+  display: flex;
+  height: 56px;
+  width: 750rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item-left {
+ margin: 8px 10px;
+  width: 40px;
+  height: 40px;
+  background-position: 0 0;
+}
+
+.item-right {
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.title {
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.singer {
+  color: #ccc;
+  font-size: 14px;
+}
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; 
+}
+
+/*历史  */
+
+
+.history-item {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  border-top: 1px solid #ededed;
+  padding: 0 15px;
+}
+.history-item image {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  height: 20px;
+  width: 20px;
+}
+.history-item .title {
+  position: absolute;
+  left: 55px;
+  right: 50px;
+  height: 44px;
+  line-height: 44px;
+  color: #000;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.history-item .delete {
+  position: absolute;
+  width: 30px;
+  right: 10px;
+  font-size: 23px;
+  text-align: center;
+  color: #888;
+}
+.clearHistory {
+  height: 44px;
+  line-height: 44px;
+  color: #47c88a;
+  text-align: center;
+}

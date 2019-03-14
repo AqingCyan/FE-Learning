@@ -1,0 +1,30 @@
+<!--pages/friend/friend.wxml-->
+<view class='friend'>
+  <view class='friendInfo'>
+    <view class='title'>我的信息</view>
+    <view class='info'>
+      <input placeholder='请输入称呼' bindblur='getUserName'></input>
+      <input placeholder='1234567' bindblur='getUserPhone' type='number'></input>
+    </view>
+    <view  class='title'>联系人1</view>
+    <view class='info'>
+      <input placeholder='请输入称呼' bindblur='getName1'></input>
+      <input placeholder='1234567' bindblur='getPhone1' type="number"></input>
+    </view>
+    <view class='title'>联系人2</view>
+    <view class='info'>
+      <input placeholder='请输入称呼' bindblur='getName2'></input>
+      <input placeholder='1234567' type='number' bindblur='getPhone2'></input>
+    </view>
+    <view class='title'>联系人3</view>
+    <view class='info'>
+      <input placeholder='请输入称呼' bindblur='getName3'></input>
+      <input placeholder='1234567' type='number' bindblur='getPhone3'></input>
+    </view>
+  </view>
+  <button bindtap='save'>保存</button>
+</view>
+
+<view class='tost' hidden='{{flag}}'>
+  至少输入个人信息和一个联系人信息
+</view>

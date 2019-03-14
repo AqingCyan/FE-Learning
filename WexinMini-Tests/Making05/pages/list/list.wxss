@@ -1,0 +1,85 @@
+/* pages/list/list.wxss */
+page{
+  font: 12px/1.5 "hiragino sans gb",arial;
+  color: #555;
+  background: #f4f4f4;
+}
+
+view {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content {
+  margin: 10px;
+}
+
+.item {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.main {
+  display: -webkit-box;
+  background: #fff;
+}
+
+.main .left {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.left image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  color: #ccc;
+  border: 0;
+} 
+
+.right {
+  position: relative;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+.right .info {
+  -webkit-box-flex: 1;
+  margin: 0 10px 0 15px;
+}
+
+.order {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .5);
+}
+
+.songName {
+  color: #000;
+  margin-left: 8px;
+  margin-right: 5px;
+  display: inline;
+}
+
+.title {
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.sign {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -4px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  -webkit-transform: rotate(-45deg);
+}

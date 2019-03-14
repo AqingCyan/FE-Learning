@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4CD0F1",
+    "navigationBarTitleText": "案例1",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  }
+}

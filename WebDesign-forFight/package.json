@@ -1,0 +1,16 @@
+{
+  "name": "web_design",
+  "version": "1.0.0",
+  "description": "xupt-2018-WebDesign by xiyounet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CreatShare02",
+  "license": "MIT",
+  "dependencies": {
+    "jQuery": "^1.7.4",
+    "jquery.countup.js": "^1.0.1",
+    "normalize.css": "^8.0.0"
+  }
+}

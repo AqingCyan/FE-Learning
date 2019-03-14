@@ -1,0 +1,69 @@
+/**index.wxss**/
+page {
+  background:#f7f7f7;
+}
+
+.list {
+  padding: 20rpx 40rpx;
+  background: #ffffff;
+  display: flex;
+}
+
+.list-left {
+  width: 120rpx;
+}
+
+.list-right {
+  flex:1;
+}
+
+button {
+  margin-top:200rpx;
+  width: 700rpx;
+}
+
+.placeholder {
+  color:#cccccc;
+}
+
+picker-view {
+  height: 560rpx;
+  width: 750rpx;
+}
+
+.picker {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 560rpx;
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  width: 750rpx;
+  padding: 0 43rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: skyblue;
+}
+
+.item {
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.mask {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}

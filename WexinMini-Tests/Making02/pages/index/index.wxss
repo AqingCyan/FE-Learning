@@ -1,0 +1,72 @@
+/**index.wxss**/
+/* 屏幕样式 */
+page {
+  background:#969696;
+}
+
+.screen {
+  position: fixed;
+  bottom: 780rpx;
+  word-wrap: break-word;
+  width: 750rpx;
+}
+.screen view {
+  color:#fff;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 30rpx;
+}
+
+/* 按键样式 */
+.btnGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 去除按钮圆角 */
+button {
+  border-radius: 0;
+}
+button::after {
+  border-radius: 0;
+}
+
+icon {
+  position: absolute;
+  left: 60rpx;
+  top: 32rpx;
+}
+
+.btn-item {
+  /* 这里的btn宽度是750满屏宽度除以4得出的值 溢出值就会自动调节*/
+  width: 188rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+}
+
+.zero {
+  width: 378rpx;
+}
+
+.bottom {
+  position: fixed;
+  bottom:0;
+  background: #fff;
+}
+
+.white {
+  background:#efefed;
+}
+
+.orange {
+  background: #fc9504;
+}
+
+.gray {
+  background: #cfcfcf;
+}
+
+.shadow {
+  background: red;
+}

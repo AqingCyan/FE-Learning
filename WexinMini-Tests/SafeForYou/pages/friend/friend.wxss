@@ -1,0 +1,70 @@
+/* pages/friend/friend.wxss */
+page {
+  margin: 0;
+  padding: 0;
+}
+
+.friend {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(https://pic3.zhimg.com/80/v2-23832d124ee4f19ab8f7a6dde9a6297e_hd.jpg);
+}
+
+.friendInfo {
+  position: relative;
+  top: 0;
+  left: 5%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.title {
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.info {
+  box-sizing: border-box;
+  flex: 1;
+  margin-top: 10px;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, .4);
+}
+
+.info input {
+  box-sizing: border-box;
+  flex: 1;
+  border: 2px solid rgba(255, 255, 255, .6);
+  border-radius: 4px;
+  margin: 5rpx auto;
+  padding-left: 10rpx;
+  width: 90%;
+  font-size: 16px;
+}
+
+button {
+  margin-top:10px;
+  width: 90%;
+}
+
+.tost {
+   position: fixed;
+   text-align: center;
+   background: rgba( 0, 0, 0, .7);
+   color: #fff;
+   line-height: 100rpx;
+   border-radius: 10rpx;
+   padding: 20rpx;
+   box-sizing: border-box;
+   width: 95%;
+   top:400rpx;
+   left: 2.5%;
+}

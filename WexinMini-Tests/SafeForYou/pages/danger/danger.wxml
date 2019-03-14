@@ -1,0 +1,13 @@
+<!--pages/danger/danger.wxml-->
+<view class='title'>
+  当遇到紧急情况的时候，该页按钮是您最直接的呼救方式，点击该按钮后，我们会立马将您的当前地理位置信息，发送至您的紧急呼救人和距您最近的派出所联系报警。在小程序预警的行程中，<text class='title1'>不要后台清理小程序，保持小程序运行。</text><text class='title2'>请勿恶作剧呼救，否则您将承担法律责任。</text>
+</view>
+
+<view class='msg' hidden='{{flag}}'>
+  <view class='content'>{{msg}}</view>
+  <view class='click'>
+    <view bindtap='must'>确定</view>
+    <view bindtap='sorry'>取消</view>
+  </view>
+</view>
+<button type='warn' bindtap='allRight'>我遇到危险了</button>

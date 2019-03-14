@@ -1,0 +1,40 @@
+{
+  "pages":[
+    
+    "pages/userInfo/userInfo",
+    "pages/index/index",
+    "pages/danger/danger",
+    "pages/friend/friend",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "Safe",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "开启服务",
+        "iconPath": "image/sever.png",
+        "selectedIconPath": "image/severSelect.png"
+      },
+      {
+        "pagePath": "pages/danger/danger",
+        "text": "紧急情况",
+        "iconPath": "image/danger.png",
+        "selectedIconPath": "image/dangerSelect.png"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "我的联系",
+        "iconPath": "image/myFriend.png",
+        "selectedIconPath": "image/myFriendSelect.png"
+      }
+    ]
+  }
+}

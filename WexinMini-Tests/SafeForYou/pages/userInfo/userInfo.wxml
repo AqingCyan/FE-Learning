@@ -1,0 +1,34 @@
+<view class='top'>
+  <view class='headImage'>
+    <image src='{{headImage}}'></image>
+  </view>
+</view>
+
+<view class='friendList' hidden='{{show}}'>
+  <view class='List'>
+    <view>姓名:</view>
+    <view>联系号码:</view>
+    <view>邮箱:</view>
+  </view>
+    <view class='List'>
+    <view>姓名:</view>
+    <view>联系号码:</view>
+    <view>邮箱:</view>
+  </view>
+    <view class='List'>
+    <view>姓名:</view>
+    <view>联系号码:</view>
+    <view>邮箱:</view>
+  </view>
+</view>
+
+<view class='noUser' hidden='{{!show}}'>
+  <view class='face'>
+    <image src='../../image/opps.png'></image>
+  </view>
+  <view class='title'>
+    <view>您未绑定任何联系人</view>
+    <view>点击填写联系人信息</view>
+  </view>
+  <button type='primary' bindtap='addFriend'>点击添加联系人</button>
+</view>

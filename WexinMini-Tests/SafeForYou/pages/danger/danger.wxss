@@ -1,0 +1,64 @@
+/* pages/danger/danger.wxss */
+page {
+  background: url(https://pic4.zhimg.com/80/v2-bd88e755e173062af791e0e4d763534e_hd.jpg);
+}
+
+.title {
+  width: 90%;
+  margin: 150rpx auto;
+  text-align: center;
+  color: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  background: rgba( 0, 0, 0, .6)
+}
+
+.title1 {
+  color: skyblue;
+}
+
+.title2 {
+  color: pink;
+}
+
+button {
+  width: 90%;
+  margin: 200rpx auto;
+}
+
+.msg {
+  background: #fff;
+  width: 95%;
+  height: 270rpx;
+  position: fixed;
+  top: 380rpx;
+  left: 2.5%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20rpx;
+  z-index: 99;
+}
+
+.content {
+  flex: 2;
+  border-bottom: 2px solid green;
+  text-align: center;
+  line-height: 180rpx;
+}
+
+.click {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.click view {
+  flex: 1;
+  text-align: center;
+  line-height: 90rpx;
+}
+
+.click view:nth-child(1) {
+  border-right: 2px solid green;
+}

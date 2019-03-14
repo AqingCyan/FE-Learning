@@ -1,0 +1,11 @@
+<!--index.wxml-->
+
+<view>
+  <swiper autoplay interval='{{interval}}' duration='{{duration}}' indicator-dots indicator-active-color='{{activeColor}}'>
+    <block wx:for="{{swiperImg}}" wx:key="u">
+      <swiper-item>
+        <image src='{{item}}' mode='scaleToFill'></image>
+      </swiper-item>  
+    </block>
+  </swiper>
+</view>

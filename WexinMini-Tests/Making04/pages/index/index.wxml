@@ -1,0 +1,13 @@
+<view class="ul" hidden='{{!flag}}' id='{{index}}' wx:for="{{data}}" wx:key="key" bindtap='jump'>
+  <view class="li">
+    <view class="left {{color[index]}}">{{index+1}}</view>
+    <!-- 标题是保存在数据的title中 -->
+    <view class="center">{{item.title}}</view>
+    <view class="right">
+      <image src='../../img/right.png'></image>
+    </view>
+  </view>
+</view>
+
+<view hidden='{{!loadingMore}}' class='loading'>正在加载</view>
+<view hidden='{{!loadingOver}}' class='loading'>已加载完全部</view>

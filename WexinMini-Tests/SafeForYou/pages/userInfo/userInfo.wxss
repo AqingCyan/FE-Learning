@@ -1,0 +1,87 @@
+page {
+  margin: 0;
+  padding: 0;  
+  background: #eee;
+}
+
+.top {
+  width: 100%;
+  height: 320rpx;
+  background: url(https://pic2.zhimg.com/80/v2-6504202d4ff1f9a54f8411254d688a3d_hd.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.headImage {
+  height: 200rpx;
+  width: 200rpx;
+  border: 3px solid skyblue;
+  border-radius: 50%;
+  margin-top: 50rpx;
+}
+
+.headImage image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.friendList {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  height: 70%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.friendList .List {
+  flex: 1;
+  padding-left: 10px;
+  line-height: 80rpx;
+  border-bottom: 2px solid #ccc;
+  color: #555;
+}
+
+.friendList .List:nth-child(3) {
+  border: none;
+}
+
+.friendList .List view {
+  border-bottom: 1px solid #eee;
+}
+
+.friendList .List view:nth-child(3) {
+  border: none;
+}
+
+
+/*未添加联系人*/
+
+.noUser {
+  width: 100%;
+}
+
+.face {
+  height: 160rpx;
+  width: 160rpx;
+  margin: 60px auto;
+  margin-bottom: 20px;
+}
+
+.face image {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  line-height: 40px;
+  color: #666;
+}
+
+.noUser button {
+  margin-top: 20px;
+  width: 600rpx;
+}

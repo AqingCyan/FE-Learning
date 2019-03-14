@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<input placeholder='请输入你的名字' placeholder-class='placeholder' bindinput='input1'></input>
+<input placeholder='请输入你的语文成绩' placeholder-class='placeholder' bindinput='input2'></input>
+<input placeholder='请输入你的数学成绩' placeholder-class='placeholder' bindinput='input3'></input>
+<button type='primary' bindtap='make'>提交</button>
+
+<view class='content' wx:if="{{flag}}">
+  <view class='content-item'>姓名:{{name}}</view>
+  <view class='content-item'>语文成绩:{{chinesefen}}</view>
+  <view class='content-item'>数学成绩:{{mathfen}}</view>
+  <view class='content-item'>平均分:{{avg}}</view>
+</view>

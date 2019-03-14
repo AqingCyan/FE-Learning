@@ -1,0 +1,38 @@
+<!--pages/list/list.wxml-->
+<view class='content' hidden='{{!flag}}'>
+  <view>
+  <block wx:for="{{img}}" wx:key="song">
+    <!-- 绑定一个跳转事件，绑定各自的id来确定点击的是哪一项 -->
+    <view class='item' bindtap='jump' id='{{index}}'>
+      <view class='main'>
+        <view class='left'>
+          <image src='{{item.url}}'></image>
+        </view>
+        <view class='right'>
+          <view class='info'>
+            <view class='title'>{{item.title}}</view>
+            <view class='order'>
+              1
+              <view class='songName'>{{item.content[0].songname}}</view>
+              - {{item.content[0].singername}}
+            </view>
+
+            <view class='order'>
+              2
+              <view class='songName'>{{item.content[1].songname}}</view>
+              - {{item.content[1].singername}}
+            </view>
+
+            <view class='order'>
+              3
+              <view class='songName'>{{item.content[2].songname}}</view>
+              - {{item.content[2].singername}}
+            </view>
+          </view>
+          <view class='sign'></view>
+        </view>
+      </view>
+    </view>
+  </block>
+  </view>
+</view>

@@ -1,0 +1,85 @@
+/* pages/ranking/ranking.wxss */
+page {
+  color: #777;
+  font: 300 12px/1.5 sans-serif;
+}
+
+image {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.box {
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  height: 54px;
+  margin: 0 16px -10px;
+}
+
+.box view {
+  font-size: 14px;
+}
+
+.box view text {
+  margin-left: 5px;
+}
+
+.content {
+  overflow: hidden; 
+}
+
+.content .item {
+  position: relative;
+  display: -webkit-box;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.content .left {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  width: 45px;
+  margin-right: -16px;
+}
+
+.content .right {
+  position: relative;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  padding: 10px 16px;
+  overflow: hidden;
+}
+
+.color {
+  color: #FF400B;
+}
+
+.music {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.songname {
+  font-size: 16px;
+  color: #000;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  overflow: hidden;
+}
+
+.songname text, .singername text {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.singername {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  overflow: hidden;
+}

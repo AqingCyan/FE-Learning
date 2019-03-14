@@ -1,0 +1,29 @@
+<view hidden="{{!flag}}">
+  <image src="{{src}}"></image>
+  <view class='box'>
+    <view>
+      排行榜
+      <text>共{{data.length}}首</text>
+    </view>
+  </view>
+
+  <view class='content'>
+    <block wx:for="{{data}}" wx:key="songlist">
+      <view class='item'>
+      <view class='left {{color[index]}}'>
+        <text>{{index+1}}</text>
+      </view>
+      <view class='right'>
+        <view class='music'>
+          <view class='songname'>
+            <text>{{item.songname}}</text>
+          </view>
+          <view class='singername'>
+            <text>{{item.singername}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>

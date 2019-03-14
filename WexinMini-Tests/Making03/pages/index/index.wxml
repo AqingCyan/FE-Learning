@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class='list'>
+  <view class='list-left'>地区:</view>
+  <!-- 我们这里给他绑定一个事件，点击弹出选择地区的框 class的值我们采用数据绑定，用三元运算符判断它的样式 -->
+  <view bindtap='showPicker' class="list-right {{flag?'':'placeholder'}}">
+    <block wx:if="{{flag}}">
+      {{provinceName[provinceIndex]}}--{{cityName[cityIndex]}}--{{countryName[countryIndex]}}
+    </block>
+    <block wx:else>请选择所在地</block>
+  </view>
+</view>
+<button type='primary' disabled='{{!flag}}'>提交</button>
+
+
+<!-- 一开始 这个选框是隐藏的，所以加了hidden -->
+<view class='picker' hidden='{{show}}'>
+  <view class='btn-group'>
+  <!-- 点击取消隐藏 -->
+    <view bindtap='cancel'>取消</view>
+    <view bindtap='sure'>确定</view>
+  </view>
+  <picker-view indicator-style="height: 50px;" bindchange="pickerChange">
+    <!-- 省市区三级，所有有三个选择框 -->
+    <picker-view-column>
+      <view wx:for="{{provinceName}}" class='item' wx:key="province">{{item}}</view>
+    </picker-view-column>
+
+    <picker-view-column>
+      <view wx:for="{{cityName}}" class="item" wx:key="city">{{item}}</view>
+    </picker-view-column>
+
+    <picker-view-column>
+      <view wx:for="{{countryName}}" class='item' wx:key="country">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
+<!-- 当选框弹出，其他部分被阴影遮盖 -->
+<view class='mask' hidden='{{show}}' bindtap='cancel'>
+
+</view>
